@@ -1,0 +1,15 @@
+services:
+  task-tracking-db:
+    image: postgres:16
+    container_name: siemens-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: siemens_user
+      POSTGRES_DB: siemens
+      POSTGRES_PASSWORD: siemens_password
+
+    volumes:
+      - database-data:/var/lib/postgresql/data/ # persist data even if container shuts down
+volumes:
+  database-data: # named volumes can be managed easier using docker-compose
