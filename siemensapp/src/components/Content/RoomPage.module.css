@@ -1,0 +1,24 @@
+.bigList {
+    text-align: center;
+  }
+  
+  .roomList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .roomItem {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 300px;
+    text-align: left;
+  }
+  
+  .roomItem div {
+    margin-bottom: 5px;
+  }
+  
